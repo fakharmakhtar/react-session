@@ -1,32 +1,15 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-class Title extends Component {
-  render() {
-    return <h2>{this.props.title}</h2>;
-  }
-}
-
-export default class Demo extends Component {
-  constructor() {
-    super();
-    this.state = {
-      title: "Ayy lmao"
-    };
-  }
-
+class Demo extends Component {
   render() {
     return (
       <div>
-        <Title title={this.state.title} />
-        <input
-          value={this.state.title}
-          onChange={event => {
-            this.setState({
-              title: event.target.value
-            });
-          }}
-        />
+        <h2>{this.props.title}</h2>
+        <br />
+        <span>{this.props.subtitle}</span>
       </div>
     );
   }
 }
+
+export default Demo;
