@@ -6,8 +6,9 @@
   "main": "src/index.js",
   "dependencies": {
     "react": "^16.13.1",
+    "react-collapsible": "^2.8.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "^3.4.2"
   },
   "devDependencies": {
     "typescript": "^3.9.7"

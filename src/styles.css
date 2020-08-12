@@ -2,3 +2,44 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  text-align: left;
+}
+.wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border: 1px solid #000;
+  padding-right: 5px;
+}
+.movieImage {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.description {
+  font-size: 12px;
+  text-align: left;
+}
+.title {
+  font-size: 18px;
+}
+img.collapse {
+  width: 20px;
+  height: 20px;
+  float: right;
+}

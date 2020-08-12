@@ -2,14 +2,15 @@ import React, { Component } from "react";
 
 class Thumbnail extends Component {
   render() {
-    const { size, src } = this.props;
-    return <picture className={size} src={src} />;
+    const { src } = this.props;
+    return <img src={src} width='100px' alt="movie" className="movieImage" />;
   }
 }
 
+
 Thumbnail.defaultProps = {
   size: "sm",
-  src: "http://[path-of-your-default-picture]"
-};
+  src: "https://image.flaticon.com/icons/svg/3248/3248136.svg"
+}
 
 export default Thumbnail;

@@ -1,14 +1,19 @@
-import React, { Fragment } from "react";
-import ReactDOM from "react-dom";
-import MovieItem from "./Components/MovieItem";
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import MovieItem from './Components/MovieItem';
+import data from './data.json';
 import "./styles.css";
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
-      <Fragment>
-        <MovieItem />
-      </Fragment>
+      <div className='App'>
+        {
+          data.map((movie, index) => {
+            return <MovieItem key={index} movie={movie}></MovieItem>
+          })
+        }
+      </div>
     );
   }
 }
