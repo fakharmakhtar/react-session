@@ -41,5 +41,16 @@ h6 {
 img.collapse {
   width: 20px;
   height: 20px;
+  content: url('static/collapse.png');
   float: right;
+}
+
+img.expand {
+  width: 20px;
+  height: 20px;
+  content: url('static/expand.png');
+  float: right;
+}
+a {
+  float: left;
 }

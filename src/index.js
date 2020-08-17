@@ -10,7 +10,9 @@ class App extends Component {
       <div className='App'>
         {
           data.map((movie, index) => {
-            return <MovieItem key={index} movie={movie}></MovieItem>
+            return <MovieItem key={index} movie={movie}>
+              
+            </MovieItem>
           })
         }
       </div>
