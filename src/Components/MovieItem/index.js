@@ -8,7 +8,7 @@ class MovieItem extends Component {
         this.state = { userRating: null, isRenderChildren: true };
         this.submitRating = this.submitRating.bind(this);
         this.collapseOnClick = this.collapseOnClick.bind(this);
-        this.renderSubmitButton = this.renderSubmitButton.bind(this);
+        this.renderUserRating = this.renderUserRating.bind(this);
     }
     submitRating(event) {
         this.setState({ userRating: event.target.value })
@@ -25,7 +25,7 @@ class MovieItem extends Component {
         }
     }
 
-    renderSubmitButton() {
+    renderUserRating() {
         const { userRating } = this.state;
         if (userRating)
             return <h5 className='rating' onClick={e => { this.setState({ userRating: null }) }}>User Rating: {userRating}</h5>
@@ -36,7 +36,7 @@ class MovieItem extends Component {
 
     renderChildren() {
         if (this.state.isRenderChildren) {
-            return <MovieDetails movie={this.props.movie} renderSubmitButton={this.renderSubmitButton}/>
+            return <MovieDetails movie={this.props.movie} renderUserRating={this.renderUserRating}/>
         }
     }
 
