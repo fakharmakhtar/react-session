@@ -27,7 +27,7 @@ class MovieDetails extends Component {
 
     renderVidTag() {
         const vidURL = this.props.movie.video_url;
-        return vidURL === undefined ? null : <Fragment><a target='_blank' href={vidURL}>Trailer Link</a><br /></Fragment>;
+        return vidURL === undefined ? null : <Fragment><a target='_blank' rel='noopener noreferrer' href={vidURL}>Trailer Link</a><br /></Fragment>;
     }
     render() {
         const { movie, renderUserRating } = this.props;
